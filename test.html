@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Queratócono - Salud & Discapacidad Abogado | Derecho a la Salud</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0b1a2e;
+      --color-navy-light: #12263f;
+      --color-gold: #c9a227;
+      --color-gold-light: #e0b83a;
+      --color-whatsapp: #25d366;
+      --color-whatsapp-dark: #1da851;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="./src/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    @media (max-width: 768px) {
+      .hero-img {
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+        object-position: 82% center;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- ========== HEADER ========== -->
+  <header class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 sm:h-18 md:h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 shrink-0 ">
+
+
+          <div class="w-9 h-9 sm:w-10 sm:h-10 border-2 border-gold rounded-full flex items-center justify-center">
+
+            <svg fill="currentColor" class="w-5 h-5 sm:w-6 sm:h-6 text-gold" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.9,11.553l-3-6a.846.846,0,0,0-.164-.225A.987.987,0,0,0,18,5H13V3a1,1,0,0,0-2,0V5H6a.987.987,0,0,0-.731.328.846.846,0,0,0-.164.225l-3,6a.982.982,0,0,0-.1.447H2a4,4,0,0,0,8,0H9.99a.982.982,0,0,0-.1-.447L7.618,7H11V20H6a1,1,0,0,0,0,2H18a1,1,0,0,0,0-2H13V7h3.382l-2.277,4.553a.982.982,0,0,0-.1.447H14a4,4,0,0,0,8,0h-.01A.982.982,0,0,0,21.9,11.553ZM7.882,12H4.118L6,8.236Zm8.236,0L18,8.236,19.882,12Z" />
+            </svg>
+          </div>
+
+          <div class="leading-tight  inline-flex flex-col items-center w-fit">
+            <div class="font-bold text-xs sm:text-sm tracking-wide">AB - SALUD Y DISPACIDAD</div>
+            <div class="text-[10px] sm:text-[11px]  tracking-widest flex justify-center items-center gap-2 mt-0.5">
+              <span class="w-8 bg-gold h-0.5 "> </span>
+              ABOGADO
+              <span class="w-8 bg-gold h-0.5"> </span>
+            </div>
+            <span class="text-xs sm:text-sm text-gold font-bold">Derecho a la Salud</span>
+          </div>
+
+
+
+
+        </a>
+
+        <!-- Nav Desktop -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-medium">
+          <!-- <a href="#sobre-mi" class="hover:text-gold transition">SOBRE MÍ</a> -->
+          <a href="#" class="text-gold">QUERATOCONO</a>
+          <a href="#servicios" class="hover:text-gold transition">¿TE PASÓ ESTO?</a>
+          <a href="#derecho" class="hover:text-gold transition">¿POR QUÉ ES TU DERECHO?</a>
+          <a href="#como" class="hover:text-gold transition">¿CÓMO PUEDO AYUDARTE?</a>
+          <a href="#sobre" class="hover:text-gold transition">SOBRE MÍ</a>
+        </nav>
+
+        <!-- CTA WhatsApp Desktop -->
+        <a href="https://wa.me/5491131315278" target="_blank"
+          class="hidden md:inline-flex items-center gap-2 bg-whtsapp hover:bg-gold hover:text-navy text-gold text-xs lg:text-sm font-semibold px-3 lg:px-4 py-2.5 rounded-lg transition shadow-md border border-gold ">
+          <svg class="w-4 h-4 lg:w-5 lg:h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          <span class="hidden xl:inline">CONSULTAR</span>
+          <span class="xl:hidden">WHATSAPP</span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="lg:hidden p-2 -mr-2" aria-label="Menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-light border-t border-white/10">
+      <div class="px-4 py-5 space-y-1 text-sm">
+        <!-- <a href="#sobre-mi" class="block py-2.5 hover:text-gold">SOBRE MÍ</a> -->
+        <a href="#" class="block py-2.5 text-gold font-medium">QUERATOCONO</a>
+        <a href="#servicios" class="block py-2.5 hover:text-gold">¿TE PASÓ ESTO?</a>
+        <a href="#derecho" class="block py-2.5 hover:text-gold">¿POR QUÉ ES TU DERECHO?</a>
+        <a href="#como" class="block py-2.5 hover:text-gold">¿CÓMO PUEDO AYUDARTE?</a>
+        <a href="#sobre" class="block py-2.5 hover:text-gold">SOBRE MÍ</a>
+        <a href="https://wa.me/5491131315278" target="_blank"
+          class="mt-3 inline-flex items-center justify-center gap-2 w-full hover:bg-gold hover:text-navy  text-gold font-semibold py-3 rounded-lg border border-gold">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          CONSULTAR POR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="relative w-full mi-h-screen md:min-h-[600px] overflow-hidden text-white flex items-center  b-red-400">
+
+    <!-- 1. IMAGEN DE FONDO (Ocupa todo en mobile y desktop) -->
+    <!-- object-right fuerza que en pantallas angostas el foco quede en el ojo/lente -->
+    <!-- <div class="relative"> -->
+    <div
+      class="absolute  z-0 bg-gradient-to-t from-black/70 via-black/0 to-black/10 md:bg-gradient-to-r md:from-black/90 md:via-black/70 md:to-transparent h-[70%] w-full">
+    </div>
+    <img src="hero.png" alt="Lente escleral en ojo"
+      class="absolute inset-0 w-full -full object-cover object-right z-0 hero-img">
+    <!-- </div> -->
+    <!-- class="w-full h-full object-cover object-[70% center] md:object-center"> -->
+
+    <!-- 2. CAPA DE GRADIENTE (Overlay para garantizar legibilidad) -->
+    <!-- En Mobile: Gradiente de abajo hacia arriba | En Desktop: Gradiente de izquierda a derecha -->
+
+
+    <!-- 3. CONTENIDO (Texto y Botón) -->
+    <div
+      class="relative z-20 w-full max-w-7xl mx-auto px-6 py-12 pb-0 md:py-20 flex flex-col justify-end md:justify-center h-full g-blue-400   md:bg-none bg-gradient-to-t from-white/80 via-white/40 to-white/10">
+
+      <div class="max-w-xl space-y-4 ">
+
+        <span class="text-xs md:text-sm font-bold tracking-widest text-gold uppercase block">
+          QUERATOCONO
+        </span>
+
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold text-navy leading-tight">
+          ¿TENÉS QUERATOCONO Y TE INDICARON LENTES <span class="text-gold">ESCLERALES?</span>
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl text-gray-800 font-medium">
+          Tu obra social o prepaga puede estar obligada a cubrirlos <span class="text-gold/80 font-bold">al
+            100%.</span>
+        </p>
+
+        <p class="text-sm  sm:text-base  text-gray-700">
+          La ley y los fallos judiciales respaldan tu derecho. Pero para hacerlo valer, <strong>tenés que
+            reclamar.</strong>
+        </p>
+
+        <!-- Botón CTA -->
+        <div class="pt-4 space-y-3">
+          <a href="#"
+            class="inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-[#1bb749] hover:bg-[#169d3e] text-white font-bold py-3.5 md:px-6 px-4 rounded-lg shadow-lg transition duration-200 text-sm md:text-base">
+            <!-- SVG WhatsApp -->
+            <svg class="size-12" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span>QUIERO RECLAMAR LA COBERTURA DE MIS LENTES ESCLERALES</span>
+          </a>
+
+          <p class="text-[11px] md:text-xs text-gray-700 flex items-center gap-1.5 justify-center sm:justify-start">
+            <span>🛡️</span> RESPUESTA RÁPIDA Y CONFIDENCIAL
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========== ¿TE PASÓ ESTO? ========== -->
+  <section class="py-12 sm:py-16 bg-white scroll-mt-15 md:scroll-mt-20 " id="servicios">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-navy mb-8 sm:mb-10">¿TE PASÓ ESTO?</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gold/10 border border-gray-100 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+          <div
+            class="w-11 h-11 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 rounded-full bg-gold/20 flex items-center justify-center border border-gold">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">La obra social rechazó los lentes.</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Te dicen que no están en el PMO o que son
+            “estéticos”.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gold/20 border border-gray-100 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+          <div
+            class="w-11 h-11 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 rounded-full bg-gold flex items-center justify-center">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">Te quieren reintegrar solo una parte.</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Y el costo de los lentes es muy alto.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gold/10 border border-gray-100 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition ">
+          <div
+            class="w-11 h-11 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 rounded-full bg-gold/20 flex items-center justify-center border border-gold">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">Hace meses que esperás una respuesta.</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Y tu visión y calidad de vida se siguen
+            deteriorando.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-gold/20 border border-gray-100 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+          <div
+            class="w-11 h-11 sm:w-12 sm:h-12 mx-auto mb-3 sm:mb-4 rounded-full bg-gold flex items-center justify-center">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">Ya hiciste el reclamo y te lo negaron.</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">No aceptes la negativa sin asesorarte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BANNER OSCURO ========== -->
+  <section class="bg-navy text-white py-8 sm:py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+        <div class="flex items-start gap-3 sm:gap-4">
+          <div
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gold flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2">NO ACEPTES LA NEGATIVA SIN ASESORARTE.
+            </h3>
+            <p class="text-sm text-gray-300 leading-relaxed">En muchos casos, la Justicia ordena la cobertura integral
+              de los lentes esclerales.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 sm:gap-4">
+          <div
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-gold flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg lg:text-xl font-bold leading-snug">Tu derecho a la salud está protegido por
+              la Constitución Nacional y las leyes vigentes.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ¿POR QUÉ ES TU DERECHO? ========== -->
+  <section class="py-12 sm:py-16 bg-gray-50 scroll-mt-15 md:scroll-mt-20 " id="derecho">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-navy mb-8 sm:mb-12">¿POR QUÉ ES TU DERECHO?
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div class="text-center">
+          <div
+            class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-navy flex items-center justify-center">
+            <svg class="w-7 h-7 sm:w-8 sm:h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">FALLOS JUDICIALES</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Numerosos fallos obligan a Obras Sociales y
+            Prepagas a cubrir al 100% los lentes esclerales para queratocono.</p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-navy flex items-center justify-center">
+            <svg class="w-7 h-7 sm:w-8 sm:h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">LEYES QUE TE RESPALDAN</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Ley 24.901, Ley 26.682 y normativa vigente
+            garantizan el derecho a la salud y a la cobertura integral.</p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-navy flex items-center justify-center">
+            <svg class="w-7 h-7 sm:w-8 sm:h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">PARTE DEL TRATAMIENTO</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Los lentes esclerales no son un extra: son el
+            tratamiento indicado para tu condición.</p>
+        </div>
+
+        <div class="text-center">
+          <div
+            class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-3 sm:mb-4 rounded-full bg-navy flex items-center justify-center">
+            <svg class="w-7 h-7 sm:w-8 sm:h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">OBLIGACIÓN DE COBERTURA</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">El PMO y la ley obligan a las obras sociales y
+            prepagas a cubrirlos sin excepciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CÓMO PUEDO AYUDARTE ========== -->
+  <section class="py-12 sm:py-16 bg-white scroll-mt-15 md:scroll-mt-22 " id="como">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center text-navy mb-8 sm:mb-12">CÓMO PUEDO AYUDARTE</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <!-- Step 1 -->
+        <!-- <div class="text-center border p-2 rounde"> -->
+        <div class=" border border-gold/50 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+
+          <div
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-gold text-navy font-bold text-lg sm:text-xl flex items-center justify-center shadow-md">
+            1</div>
+          <div class="mb-2 sm:mb-3 text-navy">
+            <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">ME ENVÍAS LA ORDEN MÉDICA</h3>
+          <p class="text-xs sm:text-sm text-gray-600">Compartime la orden de tus lentes esclerales y tus datos.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class=" border border-gold/50 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+          <div
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-gold text-navy font-bold text-lg sm:text-xl flex items-center justify-center shadow-md">
+            2</div>
+          <div class="mb-2 sm:mb-3 text-navy">
+            <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">ANALIZO TU CASO SIN CARGO</h3>
+          <p class="text-xs sm:text-sm text-gray-600">Evalúo tu caso e te indico cómo proceder.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class=" border border-gold/50 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+          <div
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-gold text-navy font-bold text-lg sm:text-xl flex items-center justify-center shadow-md">
+            3</div>
+          <div class="mb-2 sm:mb-3 text-navy">
+            <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">PREPARAMOS EL RECLAMO</h3>
+          <p class="text-xs sm:text-sm text-gray-600">Realizamos el reclamo formal ante tu obra social o prepaga.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class=" border border-gold/50 rounded-2xl p-5 sm:p-6 text-center hover:shadow-md transition">
+          <div
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto mb-3 sm:mb-4 rounded-full bg-gold text-navy font-bold text-lg sm:text-xl flex items-center justify-center shadow-md">
+            4</div>
+          <div class="mb-2 sm:mb-3 text-navy">
+            <svg class="w-10 h-10 sm:w-12 sm:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+            </svg>
+          </div>
+          <h3 class="font-bold text-navy text-sm sm:text-base mb-1.5">SI ES NECESARIO, INICIAMOS UN AMPARO</h3>
+          <p class="text-xs sm:text-sm text-gray-600">Vamos a la Justicia para garantizar tu derecho.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-10 sm:mt-12">
+        <a href="https://wa.me/5491131315278" target="_blank"
+          class="inline-flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-sm sm:text-base px-6 py-3.5 sm:px-8 sm:py-4 rounded-xl shadow-lg transition active:scale-[0.98]">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          <span class="text-center">QUIERO RECLAMAR LA COBERTURA<br class="sm:hidden"> DE MIS LENTES ESCLERALES</span>
+        </a>
+        <p class="mt-3 text-xs sm:text-sm text-gray-500">🔒 Tu consulta es 100% confidencial</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="py-12 sm:py-16 bg-navy text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-8 sm:mb-12">PERSONAS QUE YA OBTUVIERON SU
+        COBERTURA</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
+        <div class="bg-navy-light rounded-2xl p-5 sm:p-6 border border-white/10">
+          <div class="text-3xl sm:text-4xl text-gold mb-2 sm:mb-3">“</div>
+          <p class="text-sm text-gray-300 mb-4 leading-relaxed">La obra social me había rechazado los lentes esclerales.
+            Con la ayuda del estudio iniciamos el amparo y en menos de un mes obtuve la autorización. Hoy veo bien y mi
+            calidad de vida cambió completamente.</p>
+          <p class="font-semibold text-gold text-sm">— Cliente, 32 años</p>
+        </div>
+
+        <div class="bg-navy-light rounded-2xl p-5 sm:p-6 border border-white/10">
+          <div class="text-3xl sm:text-4xl text-gold mb-2 sm:mb-3">“</div>
+          <p class="text-sm text-gray-300 mb-4 leading-relaxed">Me reintegraron solo una parte y el resto era imposible
+            de pagar. Gracias al amparo me cubrieron el 100%. Excelente acompañamiento en todo el proceso.</p>
+          <p class="font-semibold text-gold text-sm">— Cliente, 27 años</p>
+        </div>
+
+        <div class="bg-navy-light rounded-2xl p-5 sm:p-6 border border-white/10">
+          <div class="text-3xl sm:text-4xl text-gold mb-2 sm:mb-3">“</div>
+          <p class="text-sm text-gray-300 mb-4 leading-relaxed">Después de varios reclamos sin respuesta, decidí
+            consultar y fue la mejor decisión. En pocas semanas la Justicia ordenó la cobertura total.</p>
+          <p class="font-semibold text-gold text-sm">— Cliente, 41 años</p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-14 text-center">
+        <div class="p-3">
+          <div class="text-2xl sm:text-3xl font-bold text-gold">+250</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1 leading-tight">Amparos de salud iniciados</div>
+        </div>
+        <div class="p-3">
+          <div class="text-2xl sm:text-3xl font-bold text-gold">100%</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1 leading-tight">Compromiso con tu derecho a la salud</div>
+        </div>
+        <div class="p-3">
+          <div class="text-xl sm:text-2xl font-bold text-gold">ATENCIÓN</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1 leading-tight">EN TODO EL PAÍS<br>Online y presencial</div>
+        </div>
+        <div class="p-3">
+          <div class="text-xl sm:text-2xl font-bold text-gold">ESPECIALISTA</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1 leading-tight">EN DERECHO A LA SALUD<br>Dedicación exclusiva
+            en amparos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE MÍ ========== -->
+  <section class="py-12 sm:py-16 bg-white scroll-mt-14 md:scroll-mt-22" id="sobre">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+        <div class="flex flex-col sm:flex-row gap-5 sm:gap-6 items-center sm:items-start text-center sm:text-left">
+          <img src="luna.jpg" alt="Braian Luna"
+            class="w-36 h-44 sm:w-40 sm:h-48 object-cover rounded-xl shadow-lg shrink-0">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-bold text-navy mb-2 sm:mb-3">SOBRE MÍ</h2>
+            <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed">
+              Soy abogado especializado en Derecho a la Salud. Desde hace años acompaño a personas con queratocono y
+              otras enfermedades que puedan acceder a los tratamientos y coberturas que les corresponden por ley.
+            </p>
+            <p class="font-semibold text-navy">Braian Luna</p>
+            <p class="text-sm text-gray-500">Mat. Prov. 11.688</p>
+          </div>
+        </div>
+
+        <div class="bg-navy text-white rounded-2xl p-6 sm:p-8 shadow-xl">
+          <div class="flex items-center gap-3 mb-3 sm:mb-4">
+            <svg class="w-7 h-7 sm:w-8 sm:h-8 text-whatsapp shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <h3 class="text-lg sm:text-xl font-bold">ESCRIBIME POR WHATSAPP</h3>
+          </div>
+          <p class="text-base text-gray-300 mb-5 sm:mb-6">Contame tu caso y te ayudo a reclamar lo que es tuyo.</p>
+          <a href="https://wa.me/5491131315278" target="_blank"
+            class="inline-flex items-center justfy-center gap-2 w-full bg-whatsapp hover:bg-whatsapp-dark text-white font-semibold text-sm sm:text-base py-3.5 sm:py-4 rounded-xl transition active:scale-[0.98] px-2 text-center">
+            <span>
+
+              QUIERO RECLAMAR LA COBERTURA DE MIS LENTES
+              <b>ESCLERALES</b>
+            </span>
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="bg-navy text-white pt-10 sm:pt-12 pb-6" id="contacto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 sm:mb-10">
+
+
+        <!-- Logo -->
+        <div class="col-span-2 md:col-span-1">
+
+
+
+          <div class="flex flex-col ">
+
+
+            <div class="leading-tight  inline-flex flex-col items-center w-fit">
+              <div class="font-bold text-xs sm:text-sm tracking-wide">AB - SALUD Y DISPACIDAD</div>
+              <div class="text-[10px] sm:text-[11px]  tracking-widest flex justify-center items-center gap-2 mt-0.5">
+                <span class="w-8 bg-gold h-0.5 "> </span>
+                ABOGADO
+                <span class="w-8 bg-gold h-0.5"> </span>
+              </div>
+              <span class="text-xs sm:text-sm text-gold font-bold">Derecho a la Salud</span>
+            </div>
+
+
+
+          </div>
+
+
+
+          <a href="https://www.instagram.com/absaludydiscapacidad/" target="_blank" class=""><svg
+              class="size-10 text-gold mt-8 ml-8" viewBox="0 0 24 24" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11Z"
+                stroke="#33363F" stroke-width="2" />
+              <circle cx="16.5" cy="7.5" r="1.5" fill="#33363F" />
+              <circle cx="12" cy="12" r="3" stroke="#33363F" stroke-width="2" />
+            </svg></a>
+        </div>
+
+        <!-- Enlaces -->
+        <!-- <div>
+          <h4 class="font-bold text-gold mb-3 text-xs sm:text-sm uppercase tracking-wider">Enlaces</h4>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-white">Inicio</a></li>
+            <li><a href="#sobre-mi" class="hover:text-white">Sobre mí</a></li>
+            <li><a href="#servicios" class="hover:text-white">Servicios</a></li>
+          </ul>
+        </div> -->
+
+        <div>
+          <h4 class="font-bold text-gold mb-3 text-xs sm:text-sm uppercase tracking-wider">Servicios</h4>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-white">Queratocono</a></li>
+            <li><a href="#servicios" class="hover:text-white">¿Te pasó esto?</a></li>
+            <li><a href="#derecho" class="hover:text-white">¿Por qué es tu derecho?</a></li>
+            <li><a href="#como" class="hover:text-white">¿Cómo puedo ayudarte?</a></li>
+            <li><a href="#sobre" class="hover:text-white">Sobre mí</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto -->
+        <div class="col-span-2 md:col-span-1">
+          <h4 class="font-bold text-gold mb-3 text-xs sm:text-sm uppercase tracking-wider">Contacto</h4>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li>Atención en todo el país</li>
+            <li>+54 9 11 3131-5278</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-white/10 pt-5 sm:pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-400 text-center sm:text-left">
+        <p>© Salud y Discapacidad Abogados. Todos los derechos reservados.</p>
+        <p>Especialistas enfocados en tu derecho a la salud.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5491131315278" target="_blank"
+    class="fixed bottom-5 right-5 z-50 bg-whatsapp hover:bg-whatsapp-dark text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition active:scale-95"
+    aria-label="WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+
+</html>
